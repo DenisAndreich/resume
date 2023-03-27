@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,72 +8,96 @@
     <meta name="keywords" content="site, resume, Denis, Demidov">
     <meta name="description" content="Это сайт - резюме Дениса Демидова">
     <title>Сайт - резюме</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <img src="img/photo.png" alt="Моё фото">
-    <h1>Денис Демидов</h1>
-    <p>Я <strong>главный диспетчер службы энергохозяйства</strong></p>
-    <p>Я люблю заниматься <em>электрикой, электромонтажом и программированием на JavaScript</em></p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://vk.com/denisandreich"target="_blank">VK</a> 
-    |
-     <a href="https://t.me/@dv_web" target="_blank">Telegram</a>
-     
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Программирование</li>
-        <li>Электрика</li>
-        <li>Путешествия</li>
-    </ol>
-    
-    <h2>Опыт работы:</h2>
-    <table>
-        <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ООО Сапсан</td>
-                <td>Ведущий инженер сервисного центра</td>
-                <td>2012-2013</td>
-            </tr>
-            <tr>
-                <td>ООО Евросеть-Ритейл</td>
-                <td>Продавец консультант</td>
-                <td>2013-2015</td>
-            </tr>
-            <tr>
-                <td>ООО ВЭлСи</td>
-                <td>Электромонтажник</td>
-                <td>2015-2020</td>
-            </tr>
-            <tr>
-                <td>АО ЯрГЭТ</td>
-                <td>Главный дипетчер</td>
-                <td>2021 - по настоящее время</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <h2>Связаться со мной</h2>
-    
-    <form>
-        <div>
-            <label for="name">Введите имя:</label>
-            <input type="text" name="id" placeholder="Введите имя">
+<body>
+    <div class="conteiner">
+        <div class="info">
+            <img src="img/photo.png" alt="Моё фото">
+            <article class="description">
+                <h1>Денис Демидов</h1>
+                <p>Я <strong>главный диспетчер службы энергохозяйства</strong></p>
+                <p>Я люблю заниматься <em>электрикой, электромонтажом и программированием на JavaScript</em></p>
+                <h4>Список социальных сетей:</h4>
+                <a href="https://vk.com/denisandreich" target="_blank">VK</a>
+                |
+                <a href="https://t.me/@dv_web" target="_blank">Telegram</a>    
+            </article>         
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" name="email" placeholder="Введите пароль">
+
+
+        <div class="card">
+            <h2>Мои хобби:</h2>
+            <ol>
+                <li>Программирование</li>
+                <li>Электрика</li>
+                <li>Путешествия</li>
+            </ol>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea name="message" id="message" placeholder="Введите сообщение..." cols="30" rows="10"></textarea>
+
+        <div class="card">
+            <h2>Опыт работы:</h2>
+            <table>
+                <thead>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ООО Сапсан</td>
+                        <td>Ведущий инженер сервисного центра</td>
+                        <td>2012-2013</td>
+                    </tr>
+                    <tr>
+                        <td>ООО Евросеть-Ритейл</td>
+                        <td>Продавец консультант</td>
+                        <td>2013-2015</td>
+                    </tr>
+                    <tr>
+                        <td>ООО ВЭлСи</td>
+                        <td>Электромонтажник</td>
+                        <td>2015-2020</td>
+                    </tr>
+                    <tr>
+                        <td>АО ЯрГЭТ</td>
+                        <td>Главный дипетчер</td>
+                        <td>2021 - по настоящее время</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <input type="submit" value="Отправить!">
-    </form>
+
+        <div class="card">
+            <h2>Связаться со мной</h2>
+
+            <form>
+                <div class="inp">
+                    <label for="name">Введите имя:</label>
+                    <input type="text" name="id" placeholder="Введите имя">
+                </div>
+                <div class="inp">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" name="email" placeholder="Введите пароль">
+                </div>
+                <div class="textar">
+                    <label for="message">Ваше сообщение:</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="Введите сообщение..." cols="30"
+                        rows="10"></textarea>
+                </div>
+                <input type="submit" value="Отправить!" class="btn">
+            </form>
+        </div>
+    </div>
+
 </body>
+
 </html>
